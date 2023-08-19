@@ -1,0 +1,14 @@
+.NavigationItem{
+    margin: 10px;
+}
+
+.NavigationItem a{
+    text-decoration: none;
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+.NavigationItem a:hover{
+    color: #ff60607b;
+}
