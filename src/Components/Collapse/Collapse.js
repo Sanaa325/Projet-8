@@ -21,10 +21,14 @@ function Collapse({title, content}) {
         <div className={classes.Collapse}>
             <div className={classes.top_bar} onClick={displayContent} >
                 <span>{title}</span>
+                <div className="classes.chevronContainer">
+                    <img className={classes.chevron} src={chevron} alt="" />
+                </div>
+                
             </div>
-            <div className={classes.chevron}>
-                <img src={chevron} alt="" />
-            </div>
+            
+                
+            
 
             <div className={collapseContent}>
                 <ul>{content}</ul>
