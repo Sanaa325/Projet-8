@@ -6,7 +6,7 @@ import chevronDown from "../../Images/chevronDown.png";
 
 
 
-function Collapse({title, content}) {
+function Collapse({ title, content }) {
 
     const [isOpen, setIsOpen] = useState(false);
     const displayContent = () => {
@@ -24,11 +24,11 @@ function Collapse({title, content}) {
                 <div className="classes.chevronContainer">
                     <img className={classes.chevron} src={chevron} alt="" />
                 </div>
-                
+
             </div>
-            
-                
-            
+
+
+
 
             <div className={collapseContent}>
                 <ul>{content}</ul>

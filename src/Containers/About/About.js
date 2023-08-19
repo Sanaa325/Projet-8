@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../Components/Banner/Banner";
+import Banner2 from "../../Components/Banners/Banner2";
 import Collapse from "../../Components/Collapse/Collapse";
 
 
@@ -14,7 +14,7 @@ const sécurité = "La sécurité est la priorité de Kasa. Aussi bien pour nos 
 
     return (
         <>
-            <Banner />
+            <Banner2 />
             <div>
                 <Collapse title="Fiabilité" content={fiabilité} /> 
             </div>

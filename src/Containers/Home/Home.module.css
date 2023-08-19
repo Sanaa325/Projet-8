@@ -1,0 +1,21 @@
+.Home{
+
+}
+
+.bannerTitle{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 25%;
+    left: 35%;
+    
+    
+    
+}
+
+.bannerTitle h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    
+}

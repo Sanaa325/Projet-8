@@ -6,6 +6,11 @@
 
 .visible{
     display: block;
+    
+
+
+}
+.visible.collapse{
     background-color: rgba(246, 246, 246, 1);
     border-radius: 10px 10px 5px 5px;
     position: relative;
@@ -15,8 +20,6 @@
     color: rgba(255, 96, 96, 1);
     padding-top: 20px;
     padding-bottom: 20px;
-
-
 }
 
 .hidden{
@@ -28,7 +31,9 @@
     height: 20px;
 }
 .chevronContainer{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top_bar{
