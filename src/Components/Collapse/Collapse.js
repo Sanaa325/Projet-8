@@ -6,7 +6,7 @@ import chevronDown from "../../Images/chevronDown.png";
 
 
 
-function Collapse() {
+function Collapse({title, content}) {
 
     const [isOpen, setIsOpen] = useState(false);
     const displayContent = () => {
@@ -19,7 +19,7 @@ function Collapse() {
 
     return (
         <div className={classes.Collapse}>
-            <div onClick={displayContent} >
+            <div className={classes.top_bar} onClick={displayContent} >
                 <span>{title}</span>
             </div>
             <div className={classes.chevron}>
@@ -27,7 +27,7 @@ function Collapse() {
             </div>
 
             <div className={collapseContent}>
-                blablabdcnjsnnvjdxnvofnvofnvosdmzmvpdfmvpfm
+                <ul>{content}</ul>
 
             </div>
 

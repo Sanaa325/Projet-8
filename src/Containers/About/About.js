@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../Components/Banner/Banner";
-import Collapse from "../../Components/Collapse/Collapse.js"
+import Collapse from "../../Components/Collapse/Collapse";
+
 
 
 
