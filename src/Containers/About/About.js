@@ -1,7 +1,23 @@
 import React from "react";
+import Banner from "../../Components/Banner/Banner";
+
+
+
 
 function About() {
-    return <h1>À propos</h1>
+    return (
+        <>
+            <Banner />
+
+        </>
+    )
+
+
+
+
+
+
+
 }
 
 
