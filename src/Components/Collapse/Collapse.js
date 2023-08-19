@@ -23,7 +23,7 @@ function Collapse({title, content}) {
                 <span>{title}</span>
             </div>
             <div className={classes.chevron}>
-            <img src={chevron} alt="" />
+                <img src={chevron} alt="" />
             </div>
 
             <div className={collapseContent}>
