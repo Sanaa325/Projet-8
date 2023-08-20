@@ -1,6 +1,39 @@
-.Carrousel{
+.Carrousel {
     height: 415px;
     width: 100%;
     border-radius: 25px;
     background-color: blue;
+    position: relative;
+}
+
+.imgCarr {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    content: "";
+    inset: 0;
+
+
+}
+
+.chevronLeft {
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+}
+
+.chevronRight {
+    color: white;
+    position: absolute;
+    cursor: pointer;
+}
+
+.slideshowBtn {
+    border: none;
+    background-color: transparent;
+    color: white;
+    display: hidden;
 }
