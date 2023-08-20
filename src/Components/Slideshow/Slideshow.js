@@ -27,11 +27,20 @@ function Slideshow({ pictures }) {
                     <button className={classes.slideshowBtn} onClick={() => setIndex(index - 1)}>{index}
                         <img className={classes.chevronLeft} src={chevronLeft} alt={"flèche gauche pour changer image" + index} />
                     </button>
-                    
+
                     {/* Bouton pour passer à l'image suivante */}
                     <button className={classes.slideshowBtn} onClick={() => setIndex(index + 1)}>{index}
                         <img className={classes.chevronRight} src={chevronRight} alt={"flèche droite pour changer image" + index} />
                     </button>
+                </div>
+            )}
+
+            {/* Numérotation slide */}
+            {maxPictures > 0 && (
+                <div className={classes.Numerotation}>
+                    <p>
+                        {index + 1}/{maxPictures + 1}
+                    </p>
                 </div>
             )}
         </div>
