@@ -33,7 +33,7 @@ function DetailCard() {
 
 
                 {/* Affichage nom proprio et sa photo*/}
-                <div className={classes.hostidentity}>
+                <div className={classes.hostIdentity}>
                     <p>{logement.host.name}</p>
                     <img src={logement.host.picture} alt="" />
                 </div>

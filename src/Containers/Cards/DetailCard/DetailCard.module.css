@@ -9,6 +9,27 @@
     color: rgba(255, 96, 96, 1) ;
 }
 
+.hostIdentity{
+    display: flex;
+    color: rgba(255, 96, 96, 1);
+    width: 167px;
+    gap: 10px;
+}
+
+.hostIdentity p{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    
+}
+
+.hostIdentity img{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    margin-top: 55px;
+
+}
 .description{
     width: 100%;
 }
