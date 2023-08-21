@@ -19,6 +19,18 @@ function DetailCard() {
             <div>
                 <h1>{logement.title}</h1>
                 <h2>{logement.location}</h2>
+                <div>
+                    {logement.tags.map((element, index) => {
+                        return (<p key={"tags" + index}>{element}</p>)
+                    })}
+                </div>
+            </div>
+
+            {/* Affichage nom proprio et sa photo*/}
+            <div>
+                <p>{logement.host.name}</p>
+                <img src={logement.host.picture} alt=""/>
+
             </div>
 
 
