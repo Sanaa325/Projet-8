@@ -2,6 +2,7 @@ import React from "react"
 import { useParams } from "react-router-dom";
 import logements from '../../../logements.json'
 import Slideshow from "../../../Components/Slideshow/Slideshow";
+import classes from "../../../Containers/Cards/DetailCard/DetailCard.module.css";
 
 function DetailCard() {
     {/* Récuperation toutes les infos du logement par rapport id */ }
@@ -21,7 +22,7 @@ function DetailCard() {
                 <h2>{logement.location}</h2>
                 <div>
                     {logement.tags.map((element, index) => {
-                        return (<p key={"tags" + index}>{element}</p>)
+                        return (<p className={classes.tags} key={"tags" + index}>{element}</p>)
                     })}
                 </div>
             </div>
