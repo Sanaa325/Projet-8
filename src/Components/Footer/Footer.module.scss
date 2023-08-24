@@ -6,20 +6,22 @@
     justify-content: center;
     height: 209px;
     background: black;
-    color: var(--colorWhite);;
+    color: var(--colorWhite);
     font-size: 24px;
-}
-
-.img_footer { 
-    margin: 0 auto; 
-}
-.img_footer img { 
-    height: 60px; 
-    width: 163px; 
-}
-.arr { 
-    height: 46px; 
-    text-align: center; 
+  }
+  
+  .img_footer {
+    margin: 0 auto;
+  
+    img {
+      height: 60px;
+      width: 163px;
+    }
+  }
+  
+  .arr {
+    height: 46px;
+    text-align: center;
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
@@ -27,9 +29,9 @@
     letter-spacing: 0em;
     text-align: center;
     color: white;
-
-    
-}
-.arr p { 
-    margin-top: 10px; 
-}
+  
+    p {
+      margin-top: 10px;
+    }
+  }
+  

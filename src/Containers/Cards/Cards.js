@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import logements from '../../logements.json'
-import classes from '../Cards/Cards.module.css'
+import classes from '../Cards/Cards.module.scss'
 
 function Cards() {
     return (

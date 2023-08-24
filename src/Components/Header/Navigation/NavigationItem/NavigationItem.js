@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import classes from "./NavigationItem.module.css";
+import classes from "./NavigationItem.module.scss";
 
 function NavigationItem(props) {
     return (

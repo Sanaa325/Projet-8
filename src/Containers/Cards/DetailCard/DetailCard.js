@@ -2,8 +2,9 @@ import React from "react"
 import { useParams } from "react-router-dom";
 import logements from '../../../logements.json'
 import Slideshow from "../../../Components/Slideshow/Slideshow";
-import classes from "../../../Containers/Cards/DetailCard/DetailCard.module.css";
-//import ReactRating from "react-rating";
+import classes from "../../../Containers/Cards/DetailCard/DetailCard.module.scss";
+import Collapse from "../../../Components/Collapse/Collapse";
+
 
 const arrayStars = [1, 2, 3, 4, 5]
 
@@ -11,7 +12,7 @@ function DetailCard() {
     {/* Récuperation toutes les infos du logement par rapport id */ }
     const { id } = useParams()
     const logement = logements.find((log) => log.id === id)
-    const starNumber= parseInt(logement.rating)
+    const starNumber = parseInt(logement.rating)
 
 
     return (
@@ -33,42 +34,34 @@ function DetailCard() {
 
 
                 {/* Affichage nom proprio et sa photo*/}
-                <div className={classes.hostIdentity}>
-                    <p>{logement.host.name}</p>
-                    <img src={logement.host.picture} alt="" />
-                </div>
+                <div>
+                    <div className={classes.hostIdentity}>
+                        <p>{logement.host.name}</p>
+                        <img src={logement.host.picture} alt="" />
+                    </div>
 
-                {/* Affichage des étoiles */}
-                <div className={classes.stars}>
-                
-                    {arrayStars.map(element => (
-                        <span
-                            key={'star' + element}
-                            className={element <= starNumber ? classes.span1 : classes.span2}
-                        >
-                            ★
-                        </span>
+                    {/* Affichage des étoiles */}
+                    <div className={classes.stars}>
 
-                    ))}
+                        {arrayStars.map(element => (
+                            <span
+                                key={'star' + element}
+                                className={element <= starNumber ? classes.span1 : classes.span2}
+                            >
+                                ★
+                            </span>
+
+                        ))}
+                    </div>
                 </div>
             </div>
+            {/* Affichage équipements et descriptions */}
+            <div className={classes.collapseEqui}>
+                <Collapse title="Description" content={logement.description} />
+                <Collapse title="Equipements" content={logement.equipments} />
+            </div>
         </div >
-
-
-
-
-
-
     )
 }
 
 export default DetailCard;
-/* <div>
-                    <ReactRating
-                    initialRating={parseFloat(logement.rating)}
-                    emptySymbol="☆"
-                    fullSymbol="★"
-                    readonly
-                    />
-                </div>
-                */

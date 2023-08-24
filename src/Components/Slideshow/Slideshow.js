@@ -1,7 +1,7 @@
 import react, { useState } from "react";
 import chevronLeft from "../../Images/chevronLeft.png";
 import chevronRight from "../../Images/chevronRight.png";
-import classes from "../Slideshow/Slideshow.module.css";
+import classes from "../Slideshow/Slideshow.module.scss";
 
 function Slideshow({ pictures }) {
 

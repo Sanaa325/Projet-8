@@ -1,7 +1,7 @@
 import React from "react";
 import Banner1 from "../../Components/Banners/Banner1";
 import Cards from "../Cards/Cards";
-import classes from "../Home/Home.module.css";
+import classes from "../Home/Home.module.scss";
 
 function Home() {
     return (

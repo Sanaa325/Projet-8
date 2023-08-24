@@ -1,6 +1,6 @@
 //Libraires
 import React from "react";
-import classes from "./Navigation.module.css";
+import classes from "./Navigation.module.scss";
 
 //Components
 import NavigationItem from "./NavigationItem/NavigationItem";

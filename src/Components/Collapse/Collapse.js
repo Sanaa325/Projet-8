@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./Collapse.module.css";
+import classes from "./Collapse.module.scss";
 import chevronUp from "../../Images/chevronUp.png";
 import chevronDown from "../../Images/chevronDown.png";
 
@@ -21,7 +21,7 @@ function Collapse({ title, content }) {
         <div className={classes.Collapse}>
             <div className={classes.top_bar} onClick={displayContent} >
                 <span>{title}</span>
-                <div className="classes.chevronContainer">
+                <div className={classes.chevronContainer}>
                     <img className={classes.chevron} src={chevron} alt="" />
                 </div>
 

@@ -1,6 +1,6 @@
 // Librairies
 import React from "react";
-import './App.css';
+import './App.module.scss';
 
 
 //Components
