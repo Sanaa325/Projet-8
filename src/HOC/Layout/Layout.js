@@ -12,7 +12,7 @@ function Layout(props) {
 
             {props.children}
 
-            <Footer/>
+            <Footer noMargin/>
 
             
         </>
@@ -23,11 +23,6 @@ function Layout(props) {
 
 
 
-/* 
-    - Header
-        - logo
-        - Navigation
-            - NavigationItem
-*/
+
 
 export default Layout

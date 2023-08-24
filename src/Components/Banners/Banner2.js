@@ -5,7 +5,7 @@ import classes from "../Banners/Banner.module.scss";
 function Banner2() {
     return (
         
-            <img src={banner2} className={classes.Banner} alt="Bannière2" />
+            <img src={banner2} className={`${classes.Banner} ${classes.darken}`} alt="Bannière2" />
             
         
     );

@@ -1,14 +1,16 @@
 .NavigationItem {
-    margin: 10px;
+    margin: 20px;
   
     a {
       text-decoration: none;
       color: #FF6060;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
+      font-size: 24px;
   
       &:hover {
         color: #ff60607b;
+        text-decoration: underline;
       }
     }
   }

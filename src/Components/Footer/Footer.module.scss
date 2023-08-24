@@ -8,6 +8,10 @@
     background: black;
     color: var(--colorWhite);
     font-size: 24px;
+
+    &.noMargin {
+      margin: 0; 
+    }
   }
   
   .img_footer {

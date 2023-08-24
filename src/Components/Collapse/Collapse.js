@@ -31,7 +31,7 @@ function Collapse({ title, content }) {
 
 
             <div className={collapseContent}>
-                <ul>{content}</ul>
+                <ul className={classes.centered}>{content}</ul>
 
             </div>
 

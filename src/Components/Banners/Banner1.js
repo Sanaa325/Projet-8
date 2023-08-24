@@ -4,12 +4,12 @@ import classes from "../Banners/Banner.module.scss";
 
 function Banner1() {
     return (
-        
-            <img src={banner1} className={classes.Banner} alt="Bannière1" />
-            
-        
+
+        <img src={banner1} className={`${classes.Banner} ${classes.darken}`} alt="Bannière1" />
+
+
     );
-    
+
 }
 
 
