@@ -4,6 +4,7 @@ import logements from '../../../logements.json'
 import Slideshow from "../../../Components/Slideshow/Slideshow";
 import classes from "../../../Containers/Cards/DetailCard/DetailCard.module.scss";
 import Collapse from "../../../Components/Collapse/Collapse";
+import Error from "../../../Components/Error/Error";
 
 
 const arrayStars = [1, 2, 3, 4, 5]
@@ -13,6 +14,12 @@ function DetailCard() {
     const { id } = useParams()
     const logement = logements.find((log) => log.id === id)
     const starNumber = parseInt(logement.rating)
+
+    {/* Redirection vers la page d’erreur en cas d’id incorrect  */ }
+    if (!logement) {
+        return <Error />;
+    }
+
 
 
     return (

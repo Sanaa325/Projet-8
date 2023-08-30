@@ -14,3 +14,5 @@ function Banner2() {
 
 
 export default Banner2;
+
+// regrouper les deux bannieres dans un seul composant et utiliser if

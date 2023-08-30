@@ -1,12 +1,13 @@
-.Home {}
+.Home {
+  margin: 20px 70px;
+}
 
 .bannerTitle {
   position: absolute;
   text-align: center;
   z-index: 1;
-  top: 50%;  /* centrer verticalement*/
-  left: 50%;  /* centrer horizontalement*/
-  transform: translate(-50%,-50%); /* centrer verticalement & horizontalement*/
+  margin-top: -198px;
+  width: 90%;
   
 
   h1 {
