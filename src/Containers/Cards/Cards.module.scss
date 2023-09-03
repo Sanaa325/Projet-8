@@ -1,54 +1,63 @@
 /* DÉBUT: conteneur d'affichage des cartes logements */
 .logements {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    background: #F7F7F7;
-    border-radius: 25px;
-    margin-bottom: 40px;
-    padding: 50px;
-  
-    a {
-      text-decoration: none;
-    }
-  }
-  /* FIN: conteneur d'affichage des cartes logements*/
-  
-  /* DÉBUT: carte logement*/
-  .ficheLogement {
-    background-image: linear-gradient(180deg, rgba(255, 96, 96, 1), rgba(255, 96, 96, 1), rgba(255, 96, 96, 1), #833131);
-    border-radius: 10px;
-    width: 100%;
-    padding-bottom: 10px;
-  
-    img {
-      width: 100%;
-      border-radius: 10px 10px 0px 0px;
-      height: 260px;
-      object-fit: cover;
-    }
-  
-    h3 {
-      display: flex;
-      height: 65px;
-      font-family: 'montserrat';
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 142.6%;
-      margin: 0px 20px;
-      align-items: center;
-      overflow: hidden;
-      /* empêche le titre de sortir du bloc */
-      color: white;
-    }
-  
-    &:hover {
-      box-shadow: 0px 0px 10px #473030;
-      cursor: pointer;
-    }
-  }
-  /* FIN: carte logement*/
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  background: #F7F7F7;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  padding: 50px;
 
-  
+  a {
+    text-decoration: none;
+  }
+}
+/* FIN: conteneur d'affichage des cartes logements*/
+
+/* DÉBUT: carte logement*/
+.ficheLogement {
+  background-image: linear-gradient(180deg, rgba(255, 96, 96, 1), rgba(255, 96, 96, 1), rgba(255, 96, 96, 1), #833131);
+  border-radius: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+
+  img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  h3 {
+    display: flex;
+    height: 65px;
+    font-family: 'montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin: 0px 20px;
+    align-items: center;
+    overflow: hidden; /* empêche le titre de sortir du bloc */
+    color: white;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 10px #473030;
+    cursor: pointer;
+  }
+}
+/* FIN: carte logement*/
+
+/* Styles pour les écrans de largeur maximale de 768px */
+@media screen and (max-width: 768px) {
+  .logements {
+    grid-template-columns: repeat(1, 1fr);
+    background: white;
+    padding: 0px;
+
+    .ficheLogement {
+      width: 100%;
+    }
+  }
+}

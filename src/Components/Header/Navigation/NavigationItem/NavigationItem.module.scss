@@ -1,17 +1,28 @@
 .NavigationItem {
-    margin: 20px;
-  
-    a {
-      text-decoration: none;
-      color: #FF6060;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      font-size: 24px;
-  
-      &:hover {
-        color: #ff60607b;
-        text-decoration: underline;
-      }
+  margin: 20px;
+
+  a {
+    text-decoration: none;
+    color: #FF6060;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+
+    &:hover {
+      color: #ff60607b;
+      text-decoration: underline;
     }
   }
-  
+
+  /* Styles pour les écrans de largeur maximale de 768px */
+  @media screen and (max-width: 768px) {
+    a {
+      font-size: 12px;
+      text-transform: uppercase;
+      white-space: nowrap; /* Empêche le saut de ligne */
+      overflow: hidden; /* Cache le texte débordant */
+      text-overflow: ellipsis; /* Affiche des points de suspension (...) si le texte dépasse */
+      max-width: 80%;
+    }
+  }
+}

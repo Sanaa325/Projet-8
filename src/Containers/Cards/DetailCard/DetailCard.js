@@ -41,7 +41,7 @@ function DetailCard() {
 
 
                 {/* Affichage nom proprio et sa photo*/}
-                <div>
+                <div className={classes.info}>
                     <div className={classes.hostIdentity}>
                         <p>{logement.host.name}</p>
                         <img src={logement.host.picture} alt="" />
@@ -64,8 +64,12 @@ function DetailCard() {
             </div>
             {/* Affichage équipements et descriptions */}
             <div className={classes.collapseEqui}>
-                <Collapse title="Description" content={logement.description} />
-                <Collapse title="Equipements" content={logement.equipments} />
+                <div className={classes.collapseColumn}>
+                    <Collapse title="Description" content={logement.description} />
+                </div>
+                <div className={classes.collapseColumn}>
+                    <Collapse title="Equipements" content={logement.equipments} />
+                </div>
             </div>
         </div >
     )

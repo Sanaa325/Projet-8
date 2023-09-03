@@ -3,7 +3,6 @@
   width: 100%;
   border-radius: 25px;
   position: relative;
-
 }
 
 .imgCarr {
@@ -47,7 +46,6 @@
     border-radius: 50%;
     width: 64px;
     height: 64px;
-
   }
 }
 
@@ -96,8 +94,55 @@
 
 .collapseEqui {
   display: flex;
+  flex-direction: row;
   text-align: center;
   gap: 30px;
   margin-bottom: 40px;
   margin-top: 15px;
+
+  .collapseColumn {
+    width: 50%;
+  }
 }
+
+/* Styles pour les écrans de largeur maximale de 768px */
+@media screen and (max-width: 768px) {
+  .detailLogement {
+    display: block; /* Change la direction en colonne en version mobile */
+  }
+
+  .info {
+    margin-top: 10px; /* Ajoute un espacement entre la section d'information et les autres éléments en version mobile */
+    display: flex;
+    flex-direction: row-reverse; /* Place les éléments en ligne */
+    justify-content: space-between;
+  }
+
+  .stars {
+    margin-top: 10px; /* Ajoute un espacement entre les étoiles et les informations de l'hôte en version mobile */
+    width: 100%;
+    justify-content: left;
+  }
+
+  .hostIdentity {
+    margin-top: 0px;
+  }
+
+  .collapseColumn {
+    display: flex;
+    flex-direction: column; /* En colonne pour la version mobile */
+    width: 100%;
+  }
+
+  /* Réinitialisation de la mise en page en ligne pour la version mobile */
+  .collapseEqui {
+    flex-direction: column;
+  }
+
+  .logement {
+    margin: 20px 20px;
+  }
+}
+
+
+

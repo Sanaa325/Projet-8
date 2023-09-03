@@ -1,12 +1,14 @@
 import React from "react";
-import Banner2 from "../../Components/Banners/Banner2";
+import Banner from "../../Components/Banners/Banner";
 import Collapse from "../../Components/Collapse/Collapse";
 import classes from "../About/About.module.scss";
+import aboutImage from "../../Images/banner2.png";
 
 
 
 
 function About() {
+    const isHomePage = false; // Ajoutez une variable pour indiquer que ce n'est pas la page d'accueil
     const fiabilité = "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
     const respect = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
     const service = "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
@@ -15,7 +17,14 @@ function About() {
 
     return (
         <>
-            <Banner2 />
+            <div className={classes.about}>
+                {isHomePage ? null : (
+                    <Banner
+                        image={aboutImage}
+                        alt="Bannière de la page À propos"
+                    />
+                )}
+            </div>
 
             <div className={classes.rencollapse}>
                 <Collapse title="Fiabilité" content={fiabilité} />

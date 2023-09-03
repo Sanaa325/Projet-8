@@ -55,24 +55,3 @@ function Collapse({ title, content }) {
 
 export default Collapse;
 
-//import React from 'react';
-
-// const MyComponent = ({ content }) => {
-    // Vérifie si content est un tableau
-   // if (Array.isArray(content)) {
-        // Génère une liste de <li> à partir des éléments du tableau
-      //  const listItems = content.map((item, index) => (
-          //  <li key={index}>{item}</li>
-      //  ));
-
-       // return (
-          //  <div>
-            //    <h2>Liste :</h2>
-             //   <ul>{listItems}</ul>
-           // </div>
-       // );
-    //}
-
-   // // Si content n'est pas un tableau, affiche un message
-    //return <div>Le contenu n'est pas un tableau.</div>;
-//};
