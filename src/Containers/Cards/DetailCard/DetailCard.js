@@ -12,15 +12,16 @@ const arrayStars = [1, 2, 3, 4, 5]
 function DetailCard() {
     {/* Récuperation toutes les infos du logement par rapport id */ }
     const { id } = useParams()
+
     const logement = logements.find((log) => log.id === id)
-    const starNumber = parseInt(logement.rating)
+
 
     {/* Redirection vers la page d’erreur en cas d’id incorrect  */ }
     if (!logement) {
         return <Error />;
     }
 
-
+    const starNumber = parseInt(logement.rating)
 
     return (
         <div className={classes.logement}>
