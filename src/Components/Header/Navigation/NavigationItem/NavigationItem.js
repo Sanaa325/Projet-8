@@ -6,7 +6,8 @@ function NavigationItem(props) {
     const location = useLocation();
     return (
         <li className={classes.NavigationItem}>
-            <Link to={props.to} className={location.pathname===props.to ?'active':""}>
+            <Link to={props.to}  style={
+                location.pathname === props.to ? { textDecoration: "underline" } : null}>
                 {props.children}
             </Link>
         </li>
