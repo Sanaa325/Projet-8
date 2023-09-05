@@ -33,7 +33,7 @@ function Collapse({ title, content }) {
 
 
             <div className={collapseContent}>
-                <ul className={classes.centered}>{liste}</ul>
+                <ul>{liste}</ul>
 
             </div>
 

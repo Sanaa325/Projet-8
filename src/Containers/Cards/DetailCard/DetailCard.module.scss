@@ -95,7 +95,7 @@
 .collapseEqui {
   display: flex;
   flex-direction: row;
-  text-align: center;
+  text-align: left;
   gap: 30px;
   margin-bottom: 40px;
   margin-top: 15px;
@@ -127,16 +127,14 @@
   .hostIdentity {
     margin-top: 0px;
   }
-
-  .collapseColumn {
-    display: flex;
-    flex-direction: column; /* En colonne pour la version mobile */
-    width: 100%;
-  }
-
-  /* Réinitialisation de la mise en page en ligne pour la version mobile */
   .collapseEqui {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+   
+  
+    .collapseColumn {
+      width: 100%;
+    }
   }
 
   .logement {
